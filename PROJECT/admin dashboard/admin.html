@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Admin Dashboard</h2>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+
+      <h3>Student List</h3>
+      <table id="studentTable">
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Course</th>
+          <th>Grade</th>
+          <th>Actions</th>
+        </tr>
+      </table>
+
+      <div class="form-section">
+        <h3>Add New Student</h3>
+        <input type="text" id="studentName" placeholder="Name" />
+        <input type="text" id="studentID" placeholder="Student ID" />
+        <button onclick="addStudent()">Add Student</button>
+      </div>
+    </div>
+    <script src="admin.js"></script>
+  </body>
+</html>
